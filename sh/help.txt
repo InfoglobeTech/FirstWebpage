@@ -1,0 +1,2 @@
+Sh folder contains deployment scripts for Ubantu server(VM)
+New empty folder will not be treated as a change to commit,push,pull
