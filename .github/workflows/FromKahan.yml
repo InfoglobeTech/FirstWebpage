@@ -1,0 +1,15 @@
+name: Outputs-demo
+on:
+   workflow_dispatch:
+jobs:
+  job1:
+    runs-on: ubuntu_latest
+    outputs: 
+       outputj1s1: ${{ steps.j1step1.outputs.1stjobstep1 }}
+       outputj1s2: ${{ steps.j1step2.outputs.1stjobstep2 }}
+    steps:
+      - id: j1step1
+        run: echo "::set-output name=1stjobstep1::output from j1step1" 
+      - id: j1step2
+        run: echo "::set-output name=1stjobstep2::output from j1step2 
+        
