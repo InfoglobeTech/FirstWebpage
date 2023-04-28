@@ -3,7 +3,7 @@ on:
    workflow_dispatch:
 jobs:
   job1:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     outputs: 
        outputj1s1: ${{ steps.j1s1.outputs.job1step1 }}
        outputj1s2: ${{ steps.j1s2.outputs.job1step2 }}
