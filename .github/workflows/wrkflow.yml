@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: string
-        run echo"Welcome to first workflow"
+        run: echo "Welcome to first workflow"
       - name: multipline script
         run: |
           node -v
