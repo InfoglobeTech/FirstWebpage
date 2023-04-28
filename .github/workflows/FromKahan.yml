@@ -9,9 +9,9 @@ jobs:
        output2: ${{ steps.step2.outputs.job1step2 }}
     steps:
       - id: step1
-        run: echo "::set-output name=job1step1::output from j1s1" 
+        run: echo "::set-output name=job1step1::hello" 
         
       - id: step2
         #run: echo "::set-output name=job1step2::output from j1s2" 
-        run: echo "{job1step2}={output from j1s2}" >> $GITHUB_OUTPUT
+        run: echo "{job1step2}={world}" >> $GITHUB_OUTPUT
         
