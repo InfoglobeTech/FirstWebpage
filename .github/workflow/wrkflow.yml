@@ -1,7 +1,10 @@
 name: shell commands
 
 on: [push]
-
+  
+branches:
+   - 'VC-Project-Branch'
+   - '!main'
 jobs:
   run-shell-commands:
     runs-on: ubuntu-latest
