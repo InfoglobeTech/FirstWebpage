@@ -5,11 +5,11 @@ jobs:
   job1:
     runs-on: ubuntu_latest
     outputs: 
-       outputj1s1: ${{ steps.j1step1.outputs.1stjobstep1 }}
-       outputj1s2: ${{ steps.j1step2.outputs.1stjobstep2 }}
+       outputj1s1: ${{ steps.j1s1.outputs.job1step1 }}
+       outputj1s2: ${{ steps.j1s2.outputs.job1step2 }}
     steps:
-      - id: j1step1
-        run: echo "::set-output name=1stjobstep1::output from j1step1" 
-      - id: j1step2
-        run: echo "::set-output name=1stjobstep2::output from j1step2 
+      - id: j1s1
+        run: echo "::set-output name=job1step1::output from j1s1" 
+      - id: j12
+        run: echo "::set-output name=job1step2::output from j1s2" 
         
