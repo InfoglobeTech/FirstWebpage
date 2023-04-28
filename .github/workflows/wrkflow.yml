@@ -1,8 +1,9 @@
 name: MyFirstWorkflow
-on: push
-branches:
-   - 'VC-Project-Branch'
-   - '!main'
+on: 
+   push
+     branches:
+        - 'VC-Project-Branch'
+        - '!main'
 jobs:
   run-MyFirstWorkflow:
     runs-on: ubuntu-latest
