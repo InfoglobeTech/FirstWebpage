@@ -4,7 +4,7 @@ branches:
    - 'VC-Project-Branch'
    - '!main'
 jobs:
-  #run-MyFirstWorkflow:
+  run-MyFirstWorkflow:
     runs-on: ubuntu-latest
     steps:
       - name: string
